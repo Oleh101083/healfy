@@ -182,7 +182,7 @@ button.header-meadle-4{
   button.header-meadle-4::before{
 	content: "";
     position: absolute;
-    background-image: url(../images/Object.png);
+    background-image: url(../images/Object.svg);
     left: 34px;
     width: 45px;
 	height: 45px;
