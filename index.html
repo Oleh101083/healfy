@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Natur</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/uikit.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/uikit.min.js"></script>
-    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <title>healfy</title>
 </head>
 
 <body>
@@ -21,126 +22,417 @@
 
         </div>
     </div>
-    <section class="header" id="header">
 
-        <a href="#" class="logo">
-            <h2>Travel</h2>
-        </a>
-        <div class="toggle" id="menuBtn"><img src="images/toggle.png" alt=""></div>
-    </section>
-    <nav id="sideNav">
-        <ul>
-            <li><a href="#header">HOME</a></li>
-            <li><a href="#what">ABOUT US</a></li>
-            <li><a href="#destination">DESTINATION</a></li>
-            <li><a href="#footer">CONTACTS</a></li>
-        </ul>
-    </nav>
-    <section class="banner">
-        <img  src="images/banner.jpg" class="fitBG" alt="">
+    <div class="wrapper">
+
         <div class="content">
-            <div id="header-content" class="container">
-                <h2>Explore The World</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates assumenda atque,
-                    excepturi ad voluptatum, reiciendis, dolor inventore ut nam maiores. Dolore ea temporibus omnis
-                    expedita consectetur, quas a voluptas.</p>
-                <a href="#what" class="btn">Learn More</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!--about-->
-    <div id="what" class="what">
-        <div class='container'>
-            <div class="what__row">
-                <a uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;" href="#image" class="what__image ibg content_image popup-link">
-                    <img  src="images/img1.jpg" alt="">
-
-                </a>
-                <div uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; viewport: 0.3;" class="what__body">
-                    <div class="what__title title ">Explore The World</div>
-                    <div class="what__text">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Et tempore sapiente voluptate praesentium nulla tempora voluptatum molestiae veritatis! Quas
-                            libero reprehenderit illo perspiciatis blanditiis nam quis fuga consequuntur,
-                            voluptate debitis! </p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet cupiditate praesentium
-                            officiis laboriosam pariatur? Quisquam nobis asperiores, reprehenderit, porro placeat cumque
-                            modi
-                            consectetur aspernatur dignissimos in atque quibusdam aut odit!</p>
-                        <div class="btn-vertical">
-                            <a href="#destination" class="btn vertical-btn">Destination</a>
+            <header class="header">
+                <div class="container">
+                    <div class="header-top">
+                        <div class="header-top__left">
+                            <div class="header-logo"><img src="images/desinfectant.png" alt=""></div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <section class="banner2">
-        <img  uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5" src="images/banner2.jpg" class="fitBG" alt="">
-    </section>
-
-    <div class="vertical" id="destination">
-        <div class='container'>
-            <div  uk-parallax="opacity: 0,1; y: -100,0; scale: 1.5,1; viewport: 0.5;" class="what__title what__title-vertical title ">Explore The World</div>
-            <div class="vertical__body">
-                <div uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;" class="vertical__row">
-
-
-
-
-                    <div class="vertical__column-img ibg">
-                        <img src="images/destination1.jpg" alt="">
-                        <div class="distination-card">
-                            <h4>Destination</h4>
-                            <p class="vertical-text">Cantry name</p>
+                        <div class="header-top__right">
+                            <a class="header-login">Login</a>
+                            <a href="#" class="btn">List Your Practice</a>
                         </div>
                     </div>
 
-
-                    <div class="vertical__column-img ibg">
-                        <img src="images/destination2.jpg" alt="">
-                        <div class="distination-card">
-                            <h4>Destination</h4>
-                            <p class="vertical-text">Cantry name</p>
-                        </div>
+                    <div class="header-meadle">
+                        <form class="header-meadle__form">
+                            <span class="header-meadle-1"><input type="text" placeholder="Area"></span>
+                            <span class="header-meadle-2"><input type="text"
+                                    placeholder="Clinics, Hospitals, Doctors etc"></span>
+                            <span class="header-meadle-3"><input type="text"
+                                    placeholder="Insurance plan and carrier"></span>
+                            <button class="header-meadle-4" type="submit" class="btn"></button>
+                        </form>
                     </div>
 
-                    <div class="vertical__column-img ibg">
-                        <img src="images/destination3.jpg" alt="">
-                        <div class="distination-card">
-                            <h4>Destination</h4>
-                            <p class="vertical-text">Cantry name</p>
+                    <div  class="header-bottom">
+                        <div class="container-mini">
+                            <div class="row">
+                                
+                                <div  uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5" class="vertical__column-h">
+                                    <div class="vertical__item-h">
+                                        <div class="vertical-item_top-h">
+                                            <img src="images/hospital.svg" alt="">
+                                        </div>
+                                        <div class="vertical__text-h">Find Pharmacies.</div>
+                                    </div>
+                                </div>
+
+                                <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5" class="vertical__column-h">
+                                    <div class="vertical__item-h">
+                                        <div class="vertical-item_top-h">
+                                            <img src="images/pills-1.svg" alt="">
+                                        </div>
+                                        <div class="vertical__text-h">Read Health
+                                            Articles.</div>
+                                    </div>
+                                </div>
+
+                                <div uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;" class="vertical__column-h">
+                                    <div class="vertical__item-h">
+                                        <div class="vertical-item_top-h">
+                                            <img src="images/medical-history-1.svg" alt="">
+                                        </div>
+                                        <div class="vertical__text-h">Find Clinics and
+                                            Hospitals.</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
-            </div>
-            <div class="btn-vertical">
-                <a href="#header" class="btn vertical-btn">Learn More</a>
-            </div>
+            </header>
 
+
+
+            <!--How it worck-->
+            <section  class="vertical">
+
+                <div class="container">
+                    <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 1,1; viewport: 0.5;" class="vertical__title">How It Works</h1>
+                    <div class="vertical__body">
+                        <div class="vertical__row">
+
+                            <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5" class="vertical__column">
+                                <div class="vertical__item ">
+                                    <div class="vertical-item_top ">
+                                        <img src="images/search4.svg" alt="">
+                                    </div>
+                                    <h2>Search</h2>
+                                    <div class="vertical__text">Search for a doctor or health specialist or
+                                        enter a particular condition or procedure.
+                                        We cover 47 medical specialities..</div>
+                                </div>
+                            </div>
+
+                            <div  uk-parallax="opacity: 0,1; y: -100,0; scale: 1,1; viewport: 0.5;" class="vertical__column">
+                                <div class="vertical__item ">
+                                    <div class="vertical-item_top ">
+                                        <img src="images/medical-history-1.svg" alt="">
+                                    </div>
+                                    <h2>Compare</h2>
+                                    <div class="vertical__text">Compare medical centers using verified patient reviews
+                                        and filter for distance,
+                                        availability and insurer to find the right doctor for you.</div>
+                                </div>
+                            </div>
+
+                            <div  uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 1,1,1; viewport: 0.5;" class="vertical__column">
+                                <div class="vertical__item ">
+                                    <div class="vertical-item_top ">
+                                        <img src="images/urgency.svg" alt="">
+                                    </div>
+                                    <h2>Call</h2>
+                                    <div class="vertical__text">After having found the right doctor and the insurance
+                                        company, you can place
+                                        a phone call to the venue and ma-bnage
+                                        the booking.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--How it worck end-->
+            <!--Slider-->
+            <section class="slider">
+                <div class="main-screen">
+                    <div class="main-screen__bg-slider ibg ">
+
+                        <img src="images/for_slider.jpg" alt="alt">
+
+                    </div>
+                </div>
+                <div class="container-slider">
+                    <div class="slider-title">
+                        <h2 uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">Read Health Articles</h2>
+                    </div>
+                    <div uk-slider="center: true">
+
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                            <div class="container-mini__slider">
+                                <ul class="uk-slider-items  uk-grid">
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top ">
+                                                <img src="images/Read Health Articles Large.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <h3 class="uk-card-title">Top Medical Proffessionals</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt.</p>
+                                            </div>
+                                            <div class="uk-card-bottom">
+                                                <span>Dr.John Doe</span>
+                                                <a href="#modal-example" uk-toggle class="read_more">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top ">
+                                                <img src="images/Read Health Articles Large.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <h3 class="uk-card-title">Top Medical Proffessionals</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt.</p>
+                                            </div>
+                                            <div class="uk-card-bottom">
+                                                <span>Dr.John Doe</span>
+                                                <a href="#modal-example" uk-toggle class="read_more">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top ">
+                                                <img src="images/Read Health Articles Large.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <h3 class="uk-card-title">Top Medical Proffessionals</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt.</p>
+                                            </div>
+                                            <div class="uk-card-bottom">
+                                                <span>Dr.John Doe</span>
+                                                <a href="#modal-example" uk-toggle class="read_more">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top ">
+                                                <img src="images/Read Health Articles Large.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <h3 class="uk-card-title">Top Medical Proffessionals</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt.</p>
+                                            </div>
+                                            <div class="uk-card-bottom">
+                                                <span>Dr.John Doe</span>
+                                                <a href="#modal-example" uk-toggle class="read_more">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="images/Read Health Articles Large.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <h3 class="uk-card-title">Top Medical Proffessionals</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt.</p>
+                                            </div>
+                                            <div class="uk-card-bottom">
+                                                <span>Dr.John Doe</span>
+                                                <a href="#modal-example" uk-toggle class="read_more">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="images/Read Health Articles Large.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <h3 class="uk-card-title">Top Medical Proffessionals</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt.</p>
+                                            </div>
+                                            <div class="uk-card-bottom">
+                                                <span>Dr.John Doe</span>
+                                                <a href="#modal-example" uk-toggle class="read_more">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="images/Read Health Articles Large.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <h3 class="uk-card-title">Top Medical Proffessionals</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt.</p>
+                                            </div>
+                                            <div class="uk-card-bottom">
+                                                <span>Dr.John Doe</span>
+                                                <a href="#modal-example" uk-toggle class="read_more">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="images/Read Health Articles Large.jpg" alt="">
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <h3 class="uk-card-title">Top Medical Proffessionals</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt.</p>
+                                            </div>
+                                            <div class="uk-card-bottom">
+                                                <span>Dr.John Doe</span>
+                                                <a href="#modal-example" uk-toggle class="read_more">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                                uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#"
+                                uk-slidenav-next uk-slider-item="next"></a>
+
+                        </div>
+
+                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--What-->
+            <section id="what" class="what">
+                <div class='container'>
+                    <div class="what__row">
+                        <a href="#image" class="what__image  content_image popup-link">
+                            <img src="images/Apple iPhone 7 Silver.png" alt="">
+                            
+
+                        </a>
+                        <div class="what__body">
+                            <div uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; viewport: 0.5;" class="what__title title ">We are launching our 
+                                App Soon!</div>
+                           <div uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;" class="sotials-stors">
+                               <img src="images/App_Store_Badge.svg" alt="">
+                               <img src="images/GooglePlay.svg" alt="">
+                           </div>
+                           <form uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;" class="what__form">
+                            <input class="what__form-input" type="email"
+                            placeholder="Enter Your Email ID For Updates">
+                            <button class="what__form-button" type="text">Sign Up</button>
+                           </form>
+                          
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </section>
+
+
+            
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__row">
+
+                        <div class="footer__row-item_a">
+                            <h4 class="footer-h4">ABOUT</h4>
+                            <ul id='ul'>
+                            <li>Press</li>
+                            <li>Carrers</li>
+                            <li>Jobs</li>
+                            <li>Blog</li>
+                            <li>Fas</li>
+                        </ul>
+                        </div>
+
+                        <div class="footer__row-item_a">
+                            <h4>Search By</h4>
+                            <ul>
+                            <li>Doctor Name</li>
+                            <li>Proffessional Name</li>
+                            <li>Spiciality</li>
+                            <li>Procedure</li>
+                            <li>Language</li>
+                        </ul>
+                        </div>
+
+                        <div class="footer__row-item_a">
+                            <h4 class="footer-h4">Cities</h4>
+                            <ul>
+                            <li>Bangalore</li>
+                            <li>Bangalore</li>
+                            <li>Bangalore</li>
+                            <li>Bangalore</li>
+                            <li>Bangalore</li>
+                        </ul>
+                        </div>
+
+                        <div class="footer__row-item_a">
+                            <h4>Specialities</h4>
+                            <ul>
+                            <li>Chiropractors</li>
+                            <li>Cardiolodists</li>
+                            <li>Dermatalohists</li>
+                            <li>Dentist</li>
+                            <li>Eye Doctors</li>
+                        </ul>
+                        </div>
+
+                        <div class="footer__row-item footer__row-item_d">
+                            <h4>Are Yuo A Doctot?</h4>
+                            
+                            <p>List Your Practice</p>
+                            
+                        
+                        </div>
+
+                        <div class="footer__row-item footer__row-item-sotial">
+                            <h4>Follow Us</h4>
+                            <ul>
+                            <li><a href=""><img src="images/facebook.svg" alt=""></a></li>
+                            <li><a href=""><img src="images/twitter.svg" alt=""></a></li>
+                            <li><a href=""><img src="images/telegram.svg" alt=""></a></li>
+                            <li><a href=""><img src="images/youtube.svg" alt=""></a></li>
+                        </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-    </div>
 
-    <section class="banner3">
-        <img src="images/banner3.jpg" class="fitBG" alt="">
-        <div class="sky" ></div>
-    </section>
-
-    <section class="footer" id="footer">
-        <ul class="sci">
-            <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
-            <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
-        </ul>
-        <h4 class="copyrightText">Copyright 2020 <a href="#">Online</a>All right reserved.</h4>
-    </section>
 
     <script src="js/script.js"></script>
 </body>
+<!-- This is the modal -->
+<div id="modal-example" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Headline</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button uk-button-primary" type="button">Save</button>
+        </p>
+    </div>
+</div>
 
 </html>

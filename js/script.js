@@ -1,3 +1,22 @@
+function testWebP(callback) {
+
+    var webP = new Image();
+    webP.onload = webP.onerror = function () {
+    callback(webP.height == 2);
+    };
+    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+    }
+    
+    testWebP(function (support) {
+    
+    if (support == true) {
+    document.querySelector('body').classList.add('webp');
+    }else{
+    document.querySelector('body').classList.add('no-webp');
+    }
+    });
+
+/*-----------------ibg-------------------*/
 function ibg(){
 
     let ibg=document.querySelectorAll(".ibg");
@@ -9,24 +28,22 @@ function ibg(){
     }
     
     ibg();
+/*-----------------ibg-------------------*/
 
-let headerContent = document.getElementById("header-content");    
-let munuBtn = document.getElementById("menuBtn");
-let sideNav = document.getElementById("sideNav");
-sideNav.style.right = "-250px";
-headerContent.style="opacity:1";
-menuBtn.onclick = function(){
-    if(sideNav.style.right == "-250px"){
-        sideNav.style.right = "0";
-        headerContent.style="opacity:0";
-    }else{
-        sideNav.style.right = "-250px";
-        headerContent.style="opacity:1";
-    }
-}  
+/*---------------GUMBURGER-MENU-----------------*/
+// const menuIcon = document.querySelector
+// (".hamburger-menu");
+// const navbar = document.querySelector(".navbar");
+// const navList = document.querySelector(".nav-list");
+// const bodyLock = document.querySelector("body");
 
-// All animations will take exactly 500ms
-let scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 500,
-	speedAsDuration: true
-});
+// menuIcon.addEventListener("click", () => {
+//     navbar.classList.toggle("change");
+// });
+// menuIcon.addEventListener("click", () => {
+//     navList.classList.toggle("change");
+// });
+// menuIcon.addEventListener("click", () => {
+//     bodyLock.classList.toggle("lock");
+// });
+/*---------------GUMBURGER-MENU-----------------*/
